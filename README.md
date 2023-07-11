@@ -12,7 +12,8 @@
     Capturando e armazenando valores em váriaveis, utilizando o método prompt() e template string.
 
 ### 3. Terceiro Exercício 
-    3
+    Trabalhando com estrutura de controle de fluxo através de estruturas condicionais (if, else if, e else) e
+    um laço de repetição (while).
 
 ### 4. Quarto Exercício
     4
