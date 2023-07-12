@@ -16,7 +16,8 @@
     um laço de repetição (while).
 
 ### 4. Quarto Exercício
-    4
+    Criando um jogo de adivinhação de número aleatório com número limitado de tentativas utlizando um
+    laço de repetição (while) e a função Math.random().
 
 ### 5. Quinto Exercício 
     5
