@@ -1,9 +1,9 @@
 
 var numeroSorteado = Math.round(Math.random() * 10);
 console.log(numeroSorteado);
+var chute = "";
 
-var tentativas = 0;
-while (tentativas < 3) {
+for (var tentativas = 0; tentativas < 3; tentativas++) {
     var chute = prompt("Advinhe o número sorteado, de 0 a 10. Você tem " + (3 - parseInt(tentativas)) +  " tentativas.");
     if(chute == numeroSorteado) {
         alert(`Você acertou! O número sorteado foi o ${numeroSorteado}.`);
@@ -13,7 +13,6 @@ while (tentativas < 3) {
     } else {
         alert("Você errou! Número Sorteado é maior.");                
     } 
-    tentativas++;
 }
 
 if (chute != numeroSorteado) {
