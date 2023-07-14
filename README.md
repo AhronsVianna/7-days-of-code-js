@@ -20,7 +20,8 @@
     laço de repetição (while) e a função Math.random().
 
 ### 5. Quinto Exercício 
-    5
+    Trabalhando com vários arrays de elementos (categorias de alimentos, um array para cada categoria),
+    gerando um array final (todos os alimentos listados por categoria), através do uso do método de array push().
 
 ### 6. Sexto Exercício
     6
