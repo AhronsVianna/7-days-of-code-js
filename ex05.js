@@ -27,7 +27,7 @@ while(simOuNao != "não") {
     if(adicionarTipo >= 1 && adicionarTipo <= 8) {
         listaMercado[adicionarTipo - 1].push(` ${adicionar}`);
     } else {
-        alert("ERRO! Você deve digitar um número de 1 a 9!")
+        alert("ERRO! Você deve digitar um número de 1 a 8!");
     }
 }
 
