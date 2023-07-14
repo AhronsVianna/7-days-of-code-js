@@ -24,7 +24,8 @@
     gerando um array final (todos os alimentos listados por categoria), através do uso do método de array push().
 
 ### 6. Sexto Exercício
-    6
+    Atualizando o código anterior, utilizando o método de array pop(), com o objetivo de
+    permitir a remoção de elementos de um array.
 
 ### 7. Último Exercício
     7
