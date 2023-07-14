@@ -24,9 +24,11 @@ while(simOuNao != "não") {
     } else {
         break;
     }
-    
-    listaMercado[adicionarTipo - 1].push(` ${adicionar}`);
+    if(adicionarTipo >= 1 && adicionarTipo <= 8) {
+        listaMercado[adicionarTipo - 1].push(` ${adicionar}`);
+    } else {
+        alert("ERRO! Você deve digitar um número de 1 a 9!")
+    }
 }
 
 alert(`LISTA DO MERCADO: \nFRUTAS: ${frutas} \nLEGUMES: ${legumes} \nLATICINIOS: ${laticinios} \nCONGELADOS: ${congelados} \nDOCES: ${doces} \nCARNES: ${carnes} \nMASSAS: ${massas} \nOUTROS: ${outros}`);
-
