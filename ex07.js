@@ -18,6 +18,20 @@ function divideFunction(x,y) {
     alert(divide);
 }
 
+function textoInicial(texto) {
+    var inicio = prompt(`${texto}: \n'+' => Adição; \n'-' => Subtração; \n'*' => Multiplicação; \n'/' => Divisão; \n's' => Sair`);
+    return inicio;
+}
+
+function numeroValido(numero) {
+    var valido = parseInt(prompt(`Digite o ${numero} número da operação`));
+    
+    while(isNaN(valido)) {
+        valido = parseInt(prompt("Você deve digitar um número valido!"));
+    }
+    return valido;    
+}
+
 var firstValue = "";
 var secondValue = "";
 var iniciar = "";
@@ -25,44 +39,36 @@ var iniciar = "";
 while(iniciar != "s") {
     alert("Bem vindo a sua CALCULADORA, vamos começar?");
     
-    iniciar = prompt("Digite a opção que deseja: \n'+' => Adição; \n'-' => Subtração; \n'*' => Multiplicação; \n'/' => Divisão; \n's' => Sair");
+    iniciar = textoInicial("Digite a opção que deseja");
 
     if(iniciar == "s") {
         break;
     }
 
     while(iniciar != "+" && iniciar != "-" && iniciar != "*" && iniciar != "/" && iniciar != "s") { 
-        iniciar = prompt("SOMENTE UMA DESTAS OPÇÕES: \n'+' => Adição; \n'-' => Subtração; \n'*' => Multiplicação; \n'/' => Divisão; \n's' => Sair");
+        iniciar = textoInicial("SOMENTE UMA DESTAS OPÇÕES");
     }
     
     if(iniciar == "s") {
         break;
     }
 
-    firstValue = parseInt(prompt("Digite o primeiro número da operação"));
-    
-    while(isNaN(firstValue)) {
-        firstValue = parseInt(prompt("Você deve digitar um número valido!"));
-    }
+    firstValue = numeroValido("primeiro");
 
-    secondValue = parseInt(prompt("Digite o segundo número da operação"));
-
-    while(isNaN(secondValue)) {
-        secondValue = parseInt(prompt("Você deve digitar um número valido!"));
-    }
+    secondValue = numeroValido("segundo");
 
     switch (iniciar) {
         case "+":
-            addFunction(firstValue,secondValue);
+            addFunction(firstValue, secondValue);
             break;
         case "-":
-            subtractFunction(firstValue,secondValue);
+            subtractFunction(firstValue, secondValue);
             break;
         case "*":
-            multiplyFunction(firstValue,secondValue);
+            multiplyFunction(firstValue, secondValue);
             break;
         case "/":
-            divideFunction(firstValue,secondValue);
+            divideFunction(firstValue, secondValue);
             break;        
     }          
 }
