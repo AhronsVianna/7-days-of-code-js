@@ -1,21 +1,17 @@
-function addFunction(x, y) {
-    var add = x + y;
-    alert(add);
+function addFunction() {
+    return firstValue + secondValue;
 }
 
-function subtractFunction(x,y) {
-    var subtract = x - y;
-    alert(subtract);
+function subtractFunction() {
+    return firstValue - secondValue;    
 }
 
-function multiplyFunction(x,y) {
-    var multiply = x * y;
-    alert(multiply);
+function multiplyFunction() {
+    return firstValue * secondValue;    
 }
 
-function divideFunction(x,y) {
-    var divide = x / y;
-    alert(divide);
+function divideFunction() {
+    return firstValue / secondValue;    
 }
 
 function textoInicial(texto) {
@@ -32,19 +28,19 @@ function numeroValido(numero) {
     return valido;    
 }
 
+function alertResposta(operacao, funcao) {
+    alert(`O resultado de ${firstValue} ${operacao} ${secondValue} é ${funcao()}.`);
+}
+
 var firstValue = "";
 var secondValue = "";
 var iniciar = "";
 
+alert("Bem vindo a sua CALCULADORA, vamos começar?");
 while(iniciar != "s") {
-    alert("Bem vindo a sua CALCULADORA, vamos começar?");
-    
+        
     iniciar = textoInicial("Digite a opção que deseja");
-
-    if(iniciar == "s") {
-        break;
-    }
-
+    
     while(iniciar != "+" && iniciar != "-" && iniciar != "*" && iniciar != "/" && iniciar != "s") { 
         iniciar = textoInicial("SOMENTE UMA DESTAS OPÇÕES");
     }
@@ -59,16 +55,18 @@ while(iniciar != "s") {
 
     switch (iniciar) {
         case "+":
-            addFunction(firstValue, secondValue);
+            alertResposta('+', addFunction);
             break;
         case "-":
-            subtractFunction(firstValue, secondValue);
+            alertResposta('-', subtractFunction);
             break;
         case "*":
-            multiplyFunction(firstValue, secondValue);
+            alertResposta('*', multiplyFunction);
             break;
         case "/":
-            divideFunction(firstValue, secondValue);
+            alertResposta('/', divideFunction);
             break;        
     }          
 }
+
+alert("Você está saindo da CALCULADORA, até mais!")
