@@ -69,4 +69,4 @@ while(iniciar != "s") {
     }          
 }
 
-alert("Você está saindo da CALCULADORA, até mais!")
+alert("Você está saindo da CALCULADORA, até mais!");
