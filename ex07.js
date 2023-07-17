@@ -55,16 +55,16 @@ while(iniciar != "s") {
 
     switch (iniciar) {
         case "+":
-            alertResposta('+', addFunction);
+            alertResposta(iniciar, addFunction);
             break;
         case "-":
-            alertResposta('-', subtractFunction);
+            alertResposta(iniciar, subtractFunction);
             break;
         case "*":
-            alertResposta('*', multiplyFunction);
+            alertResposta(iniciar, multiplyFunction);
             break;
         case "/":
-            alertResposta('/', divideFunction);
+            alertResposta(iniciar, divideFunction);
             break;        
     }          
 }
