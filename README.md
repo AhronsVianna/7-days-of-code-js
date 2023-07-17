@@ -28,7 +28,8 @@
     permitir a remoção de elementos de um array.
 
 ### 7. Último Exercício
-    7
+    Criando uma calculadora que tenha suas operações organizadas através de funções que possam ser chamadas por meio
+    da execução de uma estrutura condicional(switch...case).
 
 ## Acesso ao código
    Para acessar o repositório contendo todos os exercícios, clique [aqui](https://github.com/AhronsVianna/7-days-of-code-js)
